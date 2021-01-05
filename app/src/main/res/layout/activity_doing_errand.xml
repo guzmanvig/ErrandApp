@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeedErrandActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Help others run their errands and earn some money by"
+        android:textColor="@color/fontBackground"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="278dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="67dp"
+        android:gravity="center"
+        android:text="🅐 Actively posting where you're going or"
+        android:textColor="@color/fontBackground"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="282dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="🅑 Pick from a list of requests made by others"
+        android:textColor="@color/fontBackground"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/search_ongoing_errands_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/search_ongoing_errands_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_button_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="Pick posted errands!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/post_errand_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/post_errand_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="Going somewhere?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/search_ongoing_errands_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/see_errands_button"
+        android:layout_width="413dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/custom_button_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="See your errands"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/errand_awesome_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "82605419380",
+    "firebase_url": "https://covid-hack.firebaseio.com",
+    "project_id": "covid-hack",
+    "storage_bucket": "covid-hack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82605419380:android:31f1c98fc67604caac1a21",
+        "android_client_info": {
+          "package_name": "com.example.errand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82605419380-koq4ot9usmret6asveqbl7c6q35u9jtn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj0q2zQ7-XRs9tRc6pA9O2UbQp5vM3TVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82605419380-koq4ot9usmret6asveqbl7c6q35u9jtn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

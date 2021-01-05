@@ -1,0 +1,8 @@
+<resources>
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textColor">@color/font</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+</resources>

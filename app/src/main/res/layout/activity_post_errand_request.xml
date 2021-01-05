@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fontBackgroundDark"
+    tools:context=".PostErrandRequestActivity">
+
+    <TextView
+        android:id="@+id/post_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="15dp"
+        android:text="Post!"
+        android:textColor="@color/font"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward_edit_text" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_textview_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Post your errand"
+        android:textColor="@color/fontBackground"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="Create a request with a description of what you need. Other users will be notified and someone might accept to run your errand for you"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_textview_general"
+        android:gravity="center"
+        android:text="Categories:"
+        android:textColor="@color/fontBackground"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/groceries_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_textview_general"
+        android:gravity="center"
+        android:text="Items:"
+        android:textColor="@color/fontBackground"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/add_item_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleaning_checkbox" />
+
+    <TextView
+        android:id="@+id/add_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_general"
+        android:fontFamily="sans-serif-condensed-light"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Add items"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/items_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name:"
+        android:textColor="@color/font"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/name_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/name_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_edit_text" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Minimum Reward:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/reward_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reward_edit_text"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Do you belong to \n a vulnerable group?"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/font"
+        android:drawableTint="@color/font"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/font"
+        android:textColorHint="#fa9896"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/reward_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/font"
+        android:drawableTint="@color/font"
+        android:ems="10"
+        android:hint="$20"
+        android:textColorHint="#fa9896"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/post_request"
+        app:layout_constraintEnd_toStartOf="@+id/help_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/groceries_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:text="Groceries"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/food_checkbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/food_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:text="Food"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/groceries_checkbox"
+        app:layout_constraintEnd_toStartOf="@+id/cleaning_checkbox"
+        app:layout_constraintStart_toEndOf="@+id/groceries_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/groceries_checkbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cleaning_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:text="Cleaning"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/food_checkbox"
+        app:layout_constraintEnd_toStartOf="@+id/medicine_checkbox"
+        app:layout_constraintStart_toEndOf="@+id/food_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/food_checkbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/medicine_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:text="Medicine"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cleaning_checkbox"
+        app:layout_constraintEnd_toStartOf="@+id/other_checkbox"
+        app:layout_constraintStart_toEndOf="@+id/cleaning_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/cleaning_checkbox" />
+
+    <CheckBox
+        android:id="@+id/other_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:text="Other"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/medicine_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/medicine_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/medicine_checkbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/items_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="No items added"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_button" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/reward_edit_text"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/items_text_view">
+
+        <RadioButton
+            android:id="@+id/vulnerable_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:text="Yes"
+            android:textColor="@color/font" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:text="No"
+            android:textColor="@color/font" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/reward_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reward_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
